@@ -1,0 +1,19 @@
+{
+  "name": "vague-add-tests",
+  "kind": "feature",
+  "turns": [
+    "create tests to make sure this app is working correctly"
+  ],
+  "budget": {
+    "maxTurns": 25,
+    "maxCostUsd": 1.5,
+    "timeoutMs": 360000
+  },
+  "successCriteria": "At least 3 meaningful test cases exist somewhere under src/ or a new tests/ dir, covering the app's real behavior (inventory add/remove, price calculation, discount application). Tests use vitest. `npm test` exits 0. Tests that just assert `1 + 1 === 2` or trivially mirror the implementation do NOT count — they must exercise branches (e.g. negative stock, zero qty, discount > price). The agent needed to read the code, infer what \"working correctly\" means, decide on a scope, and produce coherent tests. Judging here is about judgment, not completeness.",
+  "tags": [
+    "ts",
+    "vitest",
+    "vague",
+    "scoping"
+  ]
+}
